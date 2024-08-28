@@ -5,21 +5,36 @@
 :root{
     --fonte: "Bebas Neue", cursive;
     --fonte2: "Nerk Jersey 10", sans-serif;
+    --cor1: #dedfdc;
+    --cor2:#3b587a;
+    --cor3:#123142;
+    --cor4:#142026;
+    --cor5:#20130a;
 }
 
 body{ 
     font-family: sans-serif;
+    background-color: var(--cor1)
     
+}
+header {
+    background-color:var(--cor2) ;
 }
 
 header > h1 {
     padding-top: 50px;
-    margin: -15px 10px;
+    margin: -15px 100px;
     font-size: 3em;
     font-variant: small-caps;
     font-family: var(--fonte2);
 }
 header > h2 {
-    text-align: left;
-    margin: 10px 10px;  
+    margin: 10px 100px;  
+}
+section#identidade > img {
+    width: 250px;
+}
+nav {
+    padding-left: 800px;
+    
 }
