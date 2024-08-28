@@ -29,12 +29,16 @@ header > h1 {
     font-family: var(--fonte2);
 }
 header > h2 {
-    margin: 10px 100px;  
+
+    text-align: left;
+    margin: 10px 10px;  
 }
-section#identidade > img {
-    width: 250px;
+
+
+table {
+    width: 500px;
+    text-align: center;
+
 }
-nav {
-    padding-left: 800px;
-    
-}
+
+>>>>>>> b3aa02bb07556915ff6d41076072931e898e4348
