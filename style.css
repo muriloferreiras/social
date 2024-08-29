@@ -16,25 +16,21 @@
 * {
     margin: 0px;
     padding: 0px;
+    
 }
 
-body{ 
+html, body {
     font-family: sans-serif;
     background-color: var(--cor1)
     
 }
 header {
-    display: flex;
-    background-color:var(--cor4) ;
-    margin: 0px;
-    padding-bottom: 80px;
-    height: 300px;
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.4)
+    background-color: var(--cor4);
+    padding-bottom: 120px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.4);
+    
 }
 
-.titulo {
-    width: 400px;
-}
 
 header h1 {
     padding-top: 50px;
@@ -43,7 +39,6 @@ header h1 {
     font-variant: small-caps;
     font-family: var(--fonte2);
     color: var(--cor1);
-    width: 500px;
 }
 header  h2 {
     margin: -15px 0px 0px 100px;
@@ -58,11 +53,39 @@ nav > img {
     height: 50px;
    
 }
+.menu {
+    background-color:var(--cor4);
+    text-align: justify;
+    position: relative;
+    display: flex;
+    gap: 40px;
+    top: 10px;
+    left: 670px;
+       
+}
+.menu a {
+    display: inline-block; /* Garante que o padding afete o layout */
+    padding: 8px; /* Espaço ao redor da imagem */
+    padding-top: 10px;
+    box-shadow:  2px 2px 5px rgba(0, 0, 0, 0.4); /* Opcional: cria um efeito de borda externa (diferente do padding) */
+    border-radius: 50%;
+}
+.menu img {
+    height: 30px;    
+}
+.menu a:hover {
+    border: 1px solid rgba(255, 255, 255, 0.637);
+    transform: translate(-3px,-3px);
+    box-shadow: 5px 5px 10px black;
+    transition: transform 0.5s;border: 1;
+}
+
 
 section#identidade {
     display: flex;
     background-color: white;
-    width: 800px;
+    min-width: 200px;
+    max-width: 800px;
     margin: auto;
     position: relative; /* Permite o ajuste da posição com top */
     top: -80px;
@@ -92,10 +115,12 @@ section#identidade > img {
     font-size: 3em;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: #20130a;
+    padding-left: 10px;
     
 }
 .txt-id p {
     font-size: 2em;
+    padding-left: 10px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .txt-id nav {
@@ -114,4 +139,11 @@ section#identidade > img {
 .txt-id img {
     height: 40px;
     
+}
+
+table td {
+    padding: 10px;
+}
+.txt-id hr {
+    margin:  15px;
 }
