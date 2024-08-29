@@ -2,6 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Jersey+10&family=Nerko+One&family=Squada+One&display=swap');
 
+
 :root{
     --fonte: "Bebas Neue", cursive;
     --fonte2: "Nerk Jersey 10", sans-serif;
@@ -12,31 +13,105 @@
     --cor5:#20130a;
 }
 
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
 body{ 
     font-family: sans-serif;
     background-color: var(--cor1)
     
 }
 header {
-    background-color:var(--cor2) ;
+    display: flex;
+    background-color:var(--cor4) ;
+    margin: 0px;
+    padding-bottom: 80px;
+    height: 300px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.4)
 }
 
-header > h1 {
+.titulo {
+    width: 400px;
+}
+
+header h1 {
     padding-top: 50px;
-    margin: -15px 100px;
-    font-size: 3em;
+    margin: -15px 0px 0px 100px;
+    font-size: 3.5em;
     font-variant: small-caps;
     font-family: var(--fonte2);
-}
-header > h2 {
-
-    text-align: left;
-    margin: 10px 10px;  
-}
-
-
-table {
+    color: var(--cor1);
     width: 500px;
-    text-align: center;
+}
+header  h2 {
+    margin: -15px 0px 0px 100px;
+    padding-top: 10px;
+    font-size: 1.5em;
+    text-align: left;
+    color: var(--cor1);
+  
+}
 
+nav > img {
+    height: 50px;
+   
+}
+
+section#identidade {
+    display: flex;
+    background-color: white;
+    width: 800px;
+    margin: auto;
+    position: relative; /* Permite o ajuste da posição com top */
+    top: -80px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+}
+section#identidade > img {
+    width: 300px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    
+}
+
+.txt-id {
+    height: 100px;
+    padding-left:10px ;
+
+}
+
+
+.txt-id h1 {
+    font-size: 1em;
+    padding: 20px;
+    font-family:sans-serif
+}
+.txt-id h2 {
+    font-size: 3em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #20130a;
+    
+}
+.txt-id p {
+    font-size: 2em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.txt-id nav {
+    background-color: var(--cor4);
+    padding: 15px 25px; 
+    display: flex;
+    position: absolute; /* Permite posicionamento absoluto */
+    right: 0px; /* Alinha o <nav> à direita do <header> com um espaçamento de 10px */
+    top: 91.3%; /* Alinha o <nav> verticalmente ao centro do <header> */
+    transform: translateY(-50%); /* Ajusta o alinhamento vertical ao centro */
+    gap: 62.55px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.4);
+    border-bottom-right-radius: 10px;
+   
+}
+.txt-id img {
+    height: 40px;
+    
 }
