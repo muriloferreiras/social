@@ -24,108 +24,126 @@ html, body {
     background-color: var(--cor1)
     
 }
+
 .comeco {
-    background-color: var(--cor4);
-    padding-bottom: 120px;
+    background-image: linear-gradient(to bottom, var(--cor4),var(--cor2));
+    padding-bottom: 100px;
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.4);
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    
 }
 
 .nome {
-    margin: -15px 0px -130px 35px;
-
-}
-
-.nome h1 {
-    padding-top: 50px;
-    font-size: 3em;
+    color: var(--cor1);
+    padding: 30px;
+    font-size: 1.2em;
     font-variant: small-caps;
-    font-family: var(--fonte2);
-    color: var(--cor1);
+    margin-bottom: 10px;
 }
-.nome  h2 {
+.nome h2{
     padding-top: 10px;
-    font-size: 1.5em;
-    text-align: left;
-    color: var(--cor1);
-  
+    font-size: 1em;
 }
-
-
 .menu {
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: flex-end;
-    padding-bottom: 0px;
-    padding-top: 75px;
-    padding-left: 20px;
-    
+    justify-content: center; /* Alinha horizontalmente os itens */
+
 }
-    
 .menu a {
-    padding: 8px;
-    padding-top: 9px;
-    box-shadow:  3px 3px 10px rgba(180, 179, 179, 0.4); 
+    box-shadow:  4px 4px 15px rgba(2, 2, 2, 0.4); 
+    margin: 17px;
+    padding: 15px;
+    display: flex;
+    justify-content: center; /* Alinha horizontalmente */
+    align-items: center;    /* Alinha verticalmente */
+    text-decoration: none;  /* Remove sublinhado do link */
+    width: 21px;            /* Ajuste conforme necessário */
+    height: 21px;
     border-radius: 50%;
-    margin-top: 120px;
-    margin-right: 35px;
 }
 .menu img {
-    height: 30px;    
+    height: 20px;    
 }
 .menu a:hover {
-    box-shadow: 5px 5px 10px black;
-}
 
+    box-shadow: 3px 3px 7px black;
+}
 
 section#identidade {
-    display: flex;
     background-color: white;
-    min-width: 200px;
-    max-width: 800px;
+    max-width: 550px;
+    display: flex;
+    flex-direction: row;
     margin: auto;
-    position: relative; /* Permite o ajuste da posição com top */
+    position: relative;
     top: -80px;
+    border-radius: 15px;
+
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.4);
-    border-radius: 10px;
+}
+section#identidade h1{
+    font-size: 12px;
+    color: var(--cor1);
+    background-color: #3b587a;
+    width: 150px;
+    height: 17px;
+    padding-top: 4px;
+    border-radius: 20px;
+    text-align: center;
 }
 
 
-section#identidade > img {
-    min-width: 0px;
-    max-width: 300px;
-    min-height: 0px;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
+#foto {
+    min-width: 100px;
+    max-width: 250px;
+    text-align: left;
+    border-top-left-radius:15px ;
+    border-bottom-left-radius:15px ;
+    box-shadow:2px 3px 5px rgba(0, 0, 0, 0.4) ;
+}
+
+#loc {
+    width: 12px;
     
 }
-
-section#identidade  h1 {
-    font-size:0.5em ;
-    padding-left:10px ;
-    padding-top: 10px;
+#email {
+    width: 12px;
 }
-section#identidade  h2 {
-    font-size:1em ;
-    padding-top: 10px;
-    padding-left:10px ;
-}
-section#identidade  p{
-    font-size:0.5em ;
-    padding-left:10px ;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;   
-}
-
-section#identidade  td{
-    padding:10px ;
-    font-size: 0.5em;
-}
-
-section#identidade hr {
+.txt-id {
     margin: 10px;
+}
+.txt-id h1 {
+    margin-bottom: 10px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.4);
+}
+.txt-id h2 {
+    margin-bottom: 2px;
+}
+.txt-id p {
+    margin-bottom: 10px;
+}
+.txt-id hr {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+section#texto {
+    text-align: left;
+    margin: auto;
+    max-width: 700px;
+}
+section#texto h2 {
+    display: flex;
+    margin: auto;
+    align-items: center; 
+    justify-content: center;
+    border-radius: 15px;
+    width: 180px;
+    height: 40px;
+    text-align: center;
+    background-color:#3b587a;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    box-shadow:2px 3px 5px rgba(0, 0, 0, 0.4) ;
+}
 
+section#texto p {
+    margin-top: 50px;
 }
