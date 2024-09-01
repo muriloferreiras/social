@@ -21,7 +21,13 @@
 
 html, body {
     font-family: sans-serif;
-    background-color: var(--cor1)
+    background-image: url(imagens/15518074_5594016.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    margin: 0;
+    
     
 }
 
@@ -93,20 +99,15 @@ section#identidade h1{
 
 #foto {
     min-width: 100px;
-    max-width: 250px;
+    max-width: 180px;
     text-align: left;
     border-top-left-radius:15px ;
     border-bottom-left-radius:15px ;
     box-shadow:2px 3px 5px rgba(0, 0, 0, 0.4) ;
 }
 
-#loc {
-    width: 12px;
-    
-}
-#email {
-    width: 12px;
-}
+
+
 .txt-id {
     margin: 10px;
 }
@@ -140,10 +141,66 @@ section#texto h2 {
     text-align: center;
     background-color:#3b587a;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
     color: white;
     box-shadow:2px 3px 5px rgba(0, 0, 0, 0.4) ;
 }
 
 section#texto p {
+    margin: 50px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;    
+    border:2px solid #20130a;
+    border-top:25px solid #20130a;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    
+}
+
+
+.repositorio {
+    display: flex;
+    margin: auto;
+    align-items: center; 
+    justify-content: center;
+    border-radius: 15px;
+    width: 180px;
+    height: 40px;
+    text-align: center;
+    background-color:#3b587a;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.7em;
+    color: white;
+    box-shadow:2px 3px 5px rgba(0, 0, 0, 0.4) ;
+}
+
+.rep {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+    
+}
+
+.link {
+    margin: 20px;
+}
+.rep img {
+    width: 150px;
+    box-shadow:2px 3px 15px rgba(0, 0, 0, 0.4) ;
+    border-radius: 12px;
+
+}
+
+footer {
+    background-color: #142026;
+    color: var(--cor1);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.7em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
     margin-top: 50px;
 }
